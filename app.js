@@ -5,7 +5,13 @@ const museum = require('./met.js')
 const port = process.env.PORT || 3000
 
 app.listen(port, function(){ 
-	console.log('Up and running!')
+	console.log('Up and running Marcelas Exam 2!')
+})
+
+app.get('', function(req,res){
+	res.send({
+		greeting: "Welcome to Marcela's 100% Exam 2!"
+	})
 })
 
 app.get('/students/:id', function(req,res){
